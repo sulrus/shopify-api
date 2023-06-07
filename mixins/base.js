@@ -109,7 +109,7 @@ const base = {
     if (query) {
       url.search = '?' + qs.stringify(query, { arrayFormat: 'brackets' });
     }
-    console.log (new Date() + url + "\n");
+    console.log (new Date() + JSON.stringify(url) + "\n");
     return url;
   }
 };
